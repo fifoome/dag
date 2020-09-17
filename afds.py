@@ -10,7 +10,7 @@ args = {
     'provide_context': True,                            # this is set to True as we want to pass variables on from one task to another
 }
 
-def load_preprocess():
+def load_preprocess(**kwargs):
     print(sys.path)
 
 dag = DAG(
