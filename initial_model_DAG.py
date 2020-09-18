@@ -3,7 +3,7 @@ import airflow
 from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 
-import sys
+import sys, os
 sys.path.insert(0,os.path.abspath(os.path.dirname(__file__)))
 
 from src.models.initial_model_functions import load_preprocess, fit_model
